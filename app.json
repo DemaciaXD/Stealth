@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/empty/empty",
+    "pages/index/index",
+    "pages/reply/reply",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "隐身独白",
+    "navigationBarTextStyle": "light"
+  }
+}

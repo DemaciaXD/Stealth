@@ -1,0 +1,45 @@
+/* pages/reply/reply.wxss */
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+}
+
+.tip {
+  margin: 40px 0px 40px 0px;
+  text-align: center;
+}
+
+.textarea {
+  margin: 5px 0px 20px 0px;
+  padding: 10px 1vw;
+  width: 90vw;
+  text-align: center;
+  color: aliceblue;
+  line-height: 36px;
+  height: 80px;
+  background: #444;
+  border-radius: 8px;
+}
+
+.reply-btn {
+  width: 88vw;
+  position: fixed;
+  bottom: 86px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.push-btn {
+  width: 88vw;
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}

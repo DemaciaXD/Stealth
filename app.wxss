@@ -1,0 +1,19 @@
+/**app.wxss**/
+
+page {
+  background: #333;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  background: #333;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 15px;
+  position: relative;
+  color: aliceblue;
+}

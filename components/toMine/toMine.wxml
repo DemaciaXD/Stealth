@@ -1,0 +1,4 @@
+<!--components/toMine/toMine.wxml-->
+<view class='to-mine' bindtap='goMinePage'>
+  <text class='text'>历史记录</text>
+</view>

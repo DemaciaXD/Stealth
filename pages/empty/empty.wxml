@@ -1,0 +1,6 @@
+<!--pages/empty/empty.wxml-->
+
+<view class='empty-view' bindtap='reauthorize'>
+  <text class='title'>{{title}}</text>
+  <text class='subTitle'>{{btnText}}</text>
+</view>

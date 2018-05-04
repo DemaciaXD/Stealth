@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "replyItem": "../../components/replyItem/replyItem",
+    "toMine": "../../components/toMine/toMine"
+  }
+}

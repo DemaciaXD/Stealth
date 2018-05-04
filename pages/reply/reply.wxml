@@ -1,0 +1,9 @@
+<!--pages/reply/reply.wxml-->
+<view class="container">
+  <toMine />
+  <image class="userinfo-avatar" src='../../images/icon.png' background-size="cover" />
+  <text class='tip'>发布的问题发布的问题发布的问题发布的问题</text>
+  <textarea class='textarea' rows="2" placeholder-class='placeholderText' placeholder="你将以匿名回复问题，不会报漏任何信息" auto-focus />
+  <button class='reply-btn' bindtap="setDisabled">回复问题</button>
+  <button class='push-btn' bindtap="pushAction">我也要发布问题</button>
+</view>

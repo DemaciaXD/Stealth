@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container" style='padding-bottom: 106px'>
+  <toMine />
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </block>
+  </view>
+  <textarea class='textarea' rows="2" placeholder-class='placeholderText' placeholder="输入你想知道的秘密或问题，群里任何人都可以回答，答案只有你自己可以看到" auto-focus bindinput='changeInput'/>
+  <replyItem/>
+  <replyItem/>
+  <replyItem/>
+  <replyItem/>
+  <button class='share-btn' bindtap="setDisabled">扔到群里</button>
+</view>

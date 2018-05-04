@@ -1,0 +1,11 @@
+<!--components/replyItem.wxml-->
+<view class='item'>
+  <image class='icon' src='../../images/icon.png' />
+  <view class='right-view'>
+    <view class='name-view'>
+      <text class='name'>{{name}}</text>
+      <text class='time'>{{time}}</text>
+    </view>
+    <text class='reply'>{{reply}}</text>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+/* components/toMine/toMine.wxss */
+
+.to-mine {
+  position: fixed;
+  top: 20px;
+  height: 30px;
+  right: 0px;
+  background: #E8E8E8;
+  border-radius: 15px 0px 0px 15px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  padding-right: 4px;
+  z-index: 999
+}
+
+.text {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}

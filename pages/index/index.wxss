@@ -1,0 +1,39 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.textarea {
+  margin: 30px 0px 40px 0px;
+  width: 88vw;
+  text-align: center;
+  color: aliceblue;
+  line-height: 36px;
+  height: 80px;
+  background: #444;
+  border-radius: 8px;
+  padding: 10px 2vw;
+}
+
+.placeholderText {
+  vertical-align: middle;
+}
+
+.share-btn {
+  width: 88vw;
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
