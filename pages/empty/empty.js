@@ -6,8 +6,7 @@ Page({
 
   data: {
     title: '',
-    btnText: '',
-    
+    btnText: ''
   },
 
   onLoad: function (options) {
@@ -85,4 +84,19 @@ Page({
     }
     );
   },
+
+  onGotUserInfo(res) {
+    console.log("res ->", res);
+    if (res.detail.rawData) {
+      // 获取到授权
+
+    } else {
+      console.log(res.detail.errMsg);
+      const errMsg = JSON.parse(res.detail.errMsg);
+      console.log(errMsg);
+      wx.showToast({
+        title: '信息只用于注册，请允许授权',
+      })
+    }
+  }
 })

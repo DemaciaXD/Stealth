@@ -1,6 +1,7 @@
 <!--pages/empty/empty.wxml-->
 
-<view class='empty-view' bindtap='reauthorize'>
+<view class='empty-view'>
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">开启匿名信箱</button>
   <text class='title'>{{title}}</text>
   <text class='subTitle'>{{btnText}}</text>
 </view>

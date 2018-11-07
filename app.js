@@ -3,7 +3,31 @@ var network = require('/utils/network.js');
 
 App({
   onLaunch: function () {
-    this.loadData();
+    this.initCloud();
+    // this.loadData();
+  },
+
+  initCloud() {
+    wx.cloud.init({
+      env: 'feng',
+      traceUser: true
+    });
+  },
+
+  callCloudFunction() {
+    wx.cloud.callFunction({
+      // 云函数名称
+      name: 'add',
+      // 传给云函数的参数
+      data: {
+        a: 1,
+        b: 2,
+      },
+      success: function (res) {
+        console.log(res.result) // 3
+      },
+      fail: console.error
+    })
   },
 
   loadData() {
@@ -56,7 +80,7 @@ App({
     })
   },
 
-  // 暂时做成全部执行登陆操作。优化逻辑，小程序退出的时候清除 sessionid, 再登陆前，判断是否有sessionid。
+// 暂时做成全部执行登陆操作。优化逻辑，小程序退出的时候清除 sessionid, 再登陆前，判断是否有sessionid。
   doLogin(encryptedData, iv, code) {
     let args = {
       encryptedData: encryptedData,
